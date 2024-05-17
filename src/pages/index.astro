@@ -1,8 +1,72 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GithubIcon from "../components/icons/Github.astro";
+import GmailIcon from "../components/icons/Gmail.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Briefcase2 from "../components/icons/Briefcase-2.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-	</main>
+<Layout
+  title="Portfolio de Guido Modarelli - Desarrollador y Programador Web con 1 año de experiencia"
+  description="Contrata a Guido Modarelli para crear tu aplicación web. Desarrollador Web, especializado en convertir ideas en realidad."
+>
+  <main class="px-4" id="about-me">
+    <SectionContainer id="top" class="py-44 pb-14">
+      <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-col lg:flex-row gap-x-4 pb-6 lg:pb-10">
+        Hola 👋, soy Guido Modarelli <div
+          class="flex lg:justify-center items-center mt-4 lg:mt-0"
+        >
+          <Badge>Mejora continua 💪</Badge>
+        </div>
+      </h1>
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+        <span>+2 año de experiencia.</span>
+        <span class="text-yellow-200/90">Desarrollador Web</span>. <span
+          class="text-blue-200/90">De Buenos Aires, Argentina 🇦🇷</span
+        >. <span class="opacity-65"
+          >Especializado en convertir ideas en realidad</span
+        >.
+      </h2>
+
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="https://www.linkedin.com/in/guidomodarelli">
+          <LinkedInIcon class="size-4 md:size-6" /> LinkedIn
+        </SocialPill>
+        <SocialPill href="https://www.github.com/guidomodarelli">
+          <GithubIcon class="size-4 md:size-6" /> Github
+        </SocialPill>
+        <SocialPill href="mailto:guidomodarelli25@gmail.com">
+          <GmailIcon class="size-4 md:size-6" /> guidomodarelli25@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia" class="pt-8">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Briefcase2 class="size-7" />
+        Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="experiencia" class="pt-8">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Briefcase2 class="size-7" />
+        Proyectos
+      </h2>
+    </SectionContainer>
+  </main>
 </Layout>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+</style>
