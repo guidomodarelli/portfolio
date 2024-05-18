@@ -8,6 +8,8 @@ import GmailIcon from "../components/icons/Gmail.astro";
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Briefcase2 from "../components/icons/Briefcase-2.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import Projects from '../components/Projects.astro';
 ---
 
 <Layout
@@ -45,19 +47,20 @@ import Briefcase2 from "../components/icons/Briefcase-2.astro";
       </nav>
     </SectionContainer>
 
-    <SectionContainer id="experiencia" class="pt-8">
-      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+    <SectionContainer id="experiencia" class="lg:pt-8">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
         <Briefcase2 class="size-7" />
         Experiencia laboral
       </h2>
       <Experience />
     </SectionContainer>
 
-    <SectionContainer id="experiencia" class="pt-8">
-      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
-        <Briefcase2 class="size-7" />
+    <SectionContainer id="projectos" class="pt-8">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <CodeIcon class="size-7" />
         Proyectos
       </h2>
+      <Projects />
     </SectionContainer>
   </main>
 </Layout>
