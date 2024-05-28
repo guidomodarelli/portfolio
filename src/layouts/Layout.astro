@@ -1,5 +1,4 @@
 ---
-import "@fontsource-variable/onest";
 interface Props {
   title: string;
   description: string;
@@ -9,7 +8,7 @@ const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -23,24 +22,69 @@ const { title, description } = Astro.props;
   </body>
 </html>
 <style is:global>
-  :root {
-    color-scheme: light dark;
-  }
   html {
-    font-family: "Onest Variable", system-ui, sans-serif;
-    scroll-behavior: smooth;
+    font-family: Menlo, Monaco, "Lucida Console", "Courier New", Courier,
+      monospace;
+    background: #fff;
+    letter-spacing: -0.025rem;
   }
 
-  body {
-    background: #050505;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  body,
+  figure {
+    margin: 0;
+    padding: 0;
   }
 
-  @media (prefers-reduce-motion: reduce) {
-    html {
-      scroll-behavior: auto;
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  p {
+    font-family:
+      ui-monospace,
+      SFMono-Regular,
+      Menlo,
+      Monaco,
+      Consolas,
+      Liberation Mono,
+      Courier New,
+      monospace;
+  }
+
+  p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    text-wrap: pretty;
+  }
+
+  @media print {
+    .no-print {
+      display: none;
     }
   }
 </style>

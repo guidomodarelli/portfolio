@@ -1,20 +1,36 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import About from "@/components/sections/About.astro";
+import Education from "@/components/sections/Education.astro";
+import Experience from "@/components/sections/Experience.astro";
+import Hero from "@/components/sections/Hero.astro";
+import KeyboardManager from "@/components/KeyboardManager.astro";
+import Layout from "@/layouts/Layout.astro";
+
+import { basics } from "@cv-common";
+import { basics as basicsLang } from "@cv-lang";
+
+const { name } = basics;
+const { label, summary } = basicsLang;
 ---
 
 <Layout
-  title="Portfolio de Guido Modarelli - Desarrollador y Programador Web con 1 año de experiencia"
-  description="Contrata a Guido Modarelli para crear tu aplicación web. Desarrollador Web, especializado en convertir ideas en realidad."
+  title={`${name}'s Minimalist Portfolio - ${label}`}
+  description={summary}
 >
-  <main class="px-4" id="about-me">
+  <main>
+    <Hero />
+    <About />
+    <Experience />
+    <Education />
+    <!-- <Projects /> -->
   </main>
+  <KeyboardManager />
 </Layout>
 
 <style>
   main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
   }
 </style>

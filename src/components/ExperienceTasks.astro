@@ -1,0 +1,43 @@
+---
+interface Props {
+  name: "Accomplishments" | "Tasks";
+  tasks: string[];
+}
+
+const { name, tasks } = Astro.props;
+---
+
+<p
+  class:list={{
+    "no-print": name === "Accomplishments",
+  }}
+>
+  <b>
+    <i>{name}:</i>
+  </b>
+</p>
+<ul
+  class="items"
+  class:list={{
+    "no-print": name === "Accomplishments",
+  }}
+>
+  {
+    tasks.map((task) => (
+      <li>
+        <p>{task}</p>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .items {
+    padding-left: 0.5rem;
+    list-style: "🔹";
+  }
+
+  .items li {
+    margin-left: 1rem;
+  }
+</style>

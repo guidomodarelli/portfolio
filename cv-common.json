@@ -1,0 +1,61 @@
+{
+  "basics": {
+    "name": "Guido Modarelli",
+    "image": "https://avatars.githubusercontent.com/u/38738725?v=4",
+    "email": "guidomodarelli25@gmail.com",
+    "phone": "(2284) 35-4993",
+    "url": "",
+    "location": {
+      "postalCode": "7400",
+      "city": "Olavarría",
+      "countryCode": "AR",
+      "region": "Argentina"
+    },
+    "profiles": [
+      {
+        "network": "X",
+        "username": "guidomodarelli",
+        "url": "https://x.com/guidomodarelli"
+      },
+      {
+        "network": "GitHub",
+        "username": "guidomodarelli",
+        "url": "https://www.github.com/guidomodarelli"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "guidomodarelli",
+        "url": "https://www.linkedin.com/in/guidomodarelli"
+      }
+    ]
+  },
+  "work": [],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Universidad Nacional del Centro de la Provincia de Buenos Aires",
+      "url": "https://exa.unicen.edu.ar/",
+      "area": "Systems Engineerings",
+      "studyType": "Bachelor",
+      "startDate": "2015-03",
+      "endDate": "2024-06"
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": []
+}

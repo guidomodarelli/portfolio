@@ -1,0 +1,66 @@
+{
+  "basics": {
+    "label": "Web Developer with 1 year of experience",
+    "summary": "I am passionate about learning new things and have a strong interest in social skills and communication. I enjoy teaching how to do things I like, such as programming, configurations, tools, and organizational skills. I find pleasure in automating tasks and exploring anything that can enhance my productivity or eliminate repetitive tasks. I am a member of a community of practice where we learn new things alongside people from around the world."
+  },
+  "work": [
+    {
+      "name": "Equo",
+      "position": "Fullstack Developer",
+      "url": "https://equo.dev",
+      "startDate": "2022-07-01",
+      "endDate": null,
+      "accomplishments": [
+        "Operational efficiency of the development environment improved by ~80% through contributions.",
+        "Setup time was reduced by ~60% through the creation of guides to accelerate the productivity of new team members.",
+        "Time reduction and enhanced team efficiency achieved by introducing new tools."
+      ],
+      "tasks": [
+        "WebApps with React.js, React Hooks, storing global data with Zustand",
+        "Rest APIs with NodeJS w/Typescript and Nest.js",
+        "Automate setting up the environment using NodeJS w/Typescript and Playwright",
+        "Persistency with PostgreSQL",
+        "Create Gitlab CI/CD pipelines",
+        "Unit and Integration Testing",
+        "Use Docker",
+        "Document the steps to do (specification) and the solution",
+        "Automation with Bash Scripting",
+        "Improvement in development processes using Go to automate and simplify tasks"
+      ]
+    },
+    {
+      "name": "La Casa de Los Cristales",
+      "position": "Fullstack Developer",
+      "url": "https://www.lacasadeloscristales.com/",
+      "startDate": "2021-03",
+      "endDate": "2022-06",
+      "accomplishments": [
+        "Improved internal communication between the sales staff and the workers by ~85%, thereby enhancing their ability to effectively communicate with customers.",
+        "The company benefited from implementing a truck monitoring system to improve its delivery service and internal communication by ~40%."
+      ],
+      "tasks": [
+        "Develop the designed solution: Architectural design and database creation",
+        "Created a wiki from scratch to write down the code guidelines, common issues and how to setup your system",
+        "Document the solution and data model",
+        "User Acceptance Testing",
+        "Rest APIs with NodeJS w/Typescript and Express.js, using WebSockets",
+        "Persistency with PostgreSQL",
+        "Data modeling though Sequelize ORM",
+        "Deploy with Docker and Docker-Compose",
+        "Generate web apps with React, Antd and Tailwind",
+        "Storing and managing global data with Zustand",
+        "Create mobile applications with ReactNative"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [],
+  "languages": [],
+  "interests": [],
+  "references": [],
+  "projects": []
+}
